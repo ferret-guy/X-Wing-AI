@@ -1,0 +1,152 @@
+In the spirit of 3D-Printed object creation, I thought it would be a helpful resource to compile all component dimensions in a single location. Hopefully with this information we'll see an influx of 3D models and innovative solutions to some of the pain-points we face when playing (and storing) the game. I'm traveling this week and don't have access to the components, but I've compiled the list of dimensions I was able to find across various forums. There's still a good deal outstanding. Perhaps you with accurate measuring tools could help fill in the gaps?
+
+edit: A HUGE thanks to /r/mxzf and their work/comment here with a majority of the measurements. With this we finally have a nearly 100% complete list of the dimensions of all non-ship components in X-Wing. I hope this is an encouragement to those of you interested in 3D modelling. If you're interested in getting started, I strongly recommend trying TinkerCAD here where you can learn to make 3D models for all sorts of things. Good luck everyone, and make sure to post your creations here!
+
+Cards
+
+Pilot Card
+
+Unsleeved Pilot Card Length – 88mm
+Unsleeved Pilot Card Width – 63.5mm
+Sleeved Pilot Card Width (FF Silver Sleeve) – ~66.5mm
+Sleeved Pilot Card Height (FF Silver Sleeve) – ~91mm
+Sleeved Pilot Card Width (KMC Perfect Fit Sleeve) - 64mm
+Sleeved Pilot Card Height (KMC Perfect Fit Sleeve) - 89mm
+Upgrade Card
+
+Unsleeved Upgrade Card Length – 63mm
+Unsleeved Upgrade Card Width – 41mm
+Sleeved Upgrade Card Width (FF Yellow Sleeve) – ~44mm
+Sleeved Upgrade Card Height (FF Yellow Sleeve) – ~67mm
+Tokens
+
+Shield Token
+
+Shield Token Inner Diameter - 19mm
+Shield Token Outer Diameter - 22.2mm
+Stress Token
+
+Stress Token Length (Corner to Opposite Edge) – 19mm
+Stress Token Width (Corner to Corner) – 21.5mm
+Stress Token Height – 2mm
+Focus/Evade Token
+
+Focus/Evade Token Diameter – 19mm
+Focus/Evade Token Height – 2mm
+Target Lock Token
+
+Target Lock Token Long Length (Edge to Edge Long Way) – 28.5mm
+Target Lock Token Short Length (Edge to Edge Short Way) – 25mm
+Target Lock Token Long Width (Corner to Corner on Long Side) – 18.7mm
+Target Lock Token Short Width (Corner to Corner on Short Side) – 12mm
+Ion Token
+
+Ion Token Diameter (Diameter of Circular Part) – 19.5mm
+Ion Token Point-to-Point Long (Point to Opposite Point) – 23.2mm
+Ion Token Point-to-Point Short (Point to Adjacent Point) – 16.5mm
+Critical Hit Token
+
+Critical Hit Token Edge-to-Edge (Edge to Opposite Edge) – 19.2mm
+Critical Hit Token Point-to-Point (Point to Opposite Point) – 22mm
+Critical Hit Token Edge – 11.5mm
+ID (Numerical) Token
+
+ID Token Height – 17mm
+ID Token Width – 15mm
+Energy Token
+
+Energy Token Length (Corner to Opposite Edge) - 21mm
+Energy Token Width (Corner to Corner) - 22mm
+Extra Munitions Token
+
+Extra Munitions Token Edge Width - 19mm
+Ship Token
+
+Small Ship Token Length – 40mm
+Small Ship Token Width – 34.2mm
+Small Ship Token Hole Diameter – 12mm
+Large Ship Token Length – 77.8mm
+Large Ship Token Width – 72.2mm
+Large Ship Token Hole Diameter – 16mm
+Bases
+
+Small Base
+
+Small Base Length – 40mm
+Small Base Width – 40mm
+Small Base Inner Width – 36mm
+Small Base Diameter – 12mm
+Large Base
+
+Large Base Length – 80mm
+Large Base Width – 80mm
+Large Base Inner Width – 76mm
+Large Base Diameter – 15.5mm
+Pegs
+
+Small Peg
+
+Small Peg Total Height – 28.2mm
+Small Peg Diameter – 3mm
+Small Peg Male End Height – 4.25mm
+Small Peg Minus Male End Height – 23.95mm
+Two Small Pegs Combined Height – 52.15mm
+Large Peg
+
+Large Peg Total Height – 28.1mm
+Large Peg Diameter – 6mm
+Large Peg Male End Height – 4mm
+Large Peg Minus Male End Height – 24mm
+Two Large Pegs Combined Height – 52.3mm
+Bombs
+
+Ion Bomb/Proton Bomb/Seismic Charge
+
+Bomb Length– 31mm
+Bomb Width – 32mm
+Bomb Nub to Opposite Edge Distance – 33mm
+Proximity Mine
+
+Proximity Mine Diameter – 32.7mm
+Cluster Mine
+
+Side Cluster Mine Diameter – 44mm
+Central Cluster Mine Length (Nubs to Opposite Edge Distance) – 47mm
+Central Cluster Mine Outer Width (Outer Edge of Indents) - 45.5mm
+Central Cluster Mine Inner Width (Inner Edge of Indents) - 40mm
+Conner Net
+
+Conner Net Maximum Length – 85mm
+Conner Net Width Nub-Side – 48.7mm
+Conner Net Width Non-Nub Side – 48.5mm
+Conner Net Minimum Width – 26.2mm
+Templates
+
+Maneuver Template Width – 20mm
+Straight Templates
+
+1 Straight Length – 40mm
+2 Straight Length – 80mm
+3 Straight Length – 120mm
+4 Straight Length – 160mm
+5 Straight Length – 200mm
+Turn Templates - 90deg
+
+1 Turn Inside Radius – 25.0
+1 Turn Outside Radius – 45.0
+2 Turn Inside Radius – 53.0
+2 Turn Outside Radius – 73.0
+3 Turn Inside Radius – 80.0
+3 Turn Outside Radius – 100.0
+Bank Templates - 45deg
+
+1 Bank Inside Radius – 70.0
+1 Bank Outside Radius – 90.0
+2 Bank Inside Radius – 120.0
+2 Bank Outside Radius – 140.0
+3 Bank Inside Radius – 170.0
+3 Bank Outside Radius – 190.0
+Range Ruler Template
+
+Range 1 Length – 100mm
+Full Range Ruler Template Length – 300mm
