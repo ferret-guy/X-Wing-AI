@@ -16,7 +16,6 @@ if __name__ == '__main__':
 	pygame.init()
 	screen = pygame.display.set_mode((500, 500))
 	done = False
-	is_blue = True
 	x = 250
 	y = 250
 	scale = 1
@@ -24,9 +23,8 @@ if __name__ == '__main__':
 	clock = pygame.time.Clock()
 	x_wing = Small_Ship(x / scale, y / scale, 0)
 	sprite = pygame.image.load("x-wing.gif")
+	sprite = pygame.transform.scale(sprite, (int(40 * scale), int(40 * scale)))
 	sprite_rect = sprite.get_rect()
-	sprite_rect.centerx = 30
-	sprite_rect.centery = 30
 
 	while not done:
 		for event in pygame.event.get():
@@ -47,12 +45,6 @@ if __name__ == '__main__':
 					print "Moved Right"
 				else:
 					print "Unknown key"
-
-		screen.fill((0, 0, 0))
-		if is_blue:
-			color = (0, 128, 255)
-		else:
-			color = (255, 100, 0)
 
 		rot_image = pygame.transform.rotate(sprite, -math.degrees(x_wing.t) - 90)
 		rot_rect = rot_image.get_rect(center=sprite_rect.center)

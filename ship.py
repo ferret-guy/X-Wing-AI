@@ -94,18 +94,30 @@ class Movment(object):
 		if left:
 			arc_ang = -arc_ang
 		base_len, _ = curr_ship.base_size
+
+		# Ghost point is used to propagate the maneuver TODO: Remove ghost point it can just be curr_ship
 		ghost_point = Point(curr_ship.x, curr_ship.y, curr_ship.t)
+
+		# Move foward half the base length to make the point inline with the start of the maneuver
 		ghost_point = ghost_point.move_straight(base_len / 2)
+
+		# Calculate the position of the point to rotate around
 		if left:
 			rot_point = Point(ghost_point.x, ghost_point.y, ghost_point.t - math.pi / 2)
 		else:
 			rot_point = Point(ghost_point.x, ghost_point.y, ghost_point.t + math.pi / 2)
 		rot_point = rot_point.move_straight(radius)
+
+		# Shift the rotation point to the origin them rotate the ghose point around it then move it back where we found it
 		ghost_point.x, ghost_point.y = ghost_point.x - rot_point.x, ghost_point.y - rot_point.y
 		ghost_point.x, ghost_point.y = ghost_point.x * math.cos(arc_ang) - ghost_point.y * math.sin(arc_ang), \
 										ghost_point.x * math.sin(arc_ang) + ghost_point.y * math.cos(arc_ang)
 		ghost_point.x, ghost_point.y = ghost_point.x + rot_point.x, ghost_point.y + rot_point.y
+
+		# Move another half base length to make the virtual point at the same point as the center of the base
 		ghost_point = ghost_point.move_straight(base_len / 2)
+
+		# Update the looking vector
 		if left:
 			curr_ship.x, curr_ship.y, curr_ship.t = ghost_point.x, ghost_point.y, curr_ship.t + arc_ang
 		else:
@@ -266,13 +278,3 @@ class Small_Ship(Ship):
 		"""
 		return 34.2, 40
 
-
-class 1LArge_Ship(Ship):
-	@property
-	def base_size(self):
-		"""
-		Returns the size of the base in mm (width, Height
-		:return: A tuple containing the Width and Height
-		:rtype: tuple(int, int)
-		"""
-		return 34.2, 40
