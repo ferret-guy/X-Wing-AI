@@ -5,6 +5,7 @@ class Point(object):
 	def __init__(self, x, y, t):
 		"""
 		Point class, is a point
+
 		:param x: x pos (normally in mm)
 		:param y: y pos (normally in mm
 		:param t: theta normally in rad
@@ -16,6 +17,7 @@ class Point(object):
 	def dist(self, point):
 		"""
 		Caculates the distance to the selected point
+
 		:param point: Another point
 		:type point: Point
 		:return: Distance
@@ -23,9 +25,17 @@ class Point(object):
 		"""
 		return math.sqrt((self.x - point.x)**2 + (self.y - point.y)**2)
 
-	def move_straight(self, len):
-		self.x += len * math.cos(self.t)
-		self.y += len * math.sin(self.t)
+	def move_straight(self, dist):
+		"""
+		Moves the point along the direction it is looking the specified distance
+
+		:param dist: Distance to move
+		:type dist: float
+		:return: the moved point (also updates the internal state)
+		:rtype: Point
+		"""
+		self.x += dist * math.cos(self.t)
+		self.y += dist * math.sin(self.t)
 		return self
 
 
@@ -34,8 +44,10 @@ class Movment(object):
 	def straight_1(curr_ship):
 		"""
 		Moves the ship 1 Straight
+
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		return curr_ship.move_straight(40)
 
@@ -43,8 +55,10 @@ class Movment(object):
 	def straight_2(curr_ship):
 		"""
 		Moves the ship 2 Straight
+
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		return curr_ship.move_straight(80)
 
@@ -52,8 +66,10 @@ class Movment(object):
 	def straight_3(curr_ship):
 		"""
 		Moves the ship 3 Straight
+
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		return curr_ship.move_straight(120)
 
@@ -61,8 +77,10 @@ class Movment(object):
 	def straight_4(curr_ship):
 		"""
 		Moves the ship 4 Straight
+
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		return curr_ship.move_straight(160)
 
@@ -70,8 +88,10 @@ class Movment(object):
 	def straight_5(curr_ship):
 		"""
 		Moves the ship 5 Straight
+
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		return curr_ship.move_straight(200)
 
@@ -79,6 +99,7 @@ class Movment(object):
 	def curved_move(curr_ship, rad, ang, left):
 		"""
 		Moves the ship in a turn
+
 		:param curr_ship: Current ship
 		:type curr_ship: Ship
 		:param rad: The radius in mm to move
@@ -128,7 +149,8 @@ class Movment(object):
 	def turn_1_left(curr_ship):
 		"""
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		radius = 35
 		arc_ang = math.pi / 2
@@ -138,7 +160,8 @@ class Movment(object):
 	def turn_1_right(curr_ship):
 		"""
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		radius = 35
 		arc_ang = math.pi / 2
@@ -148,7 +171,8 @@ class Movment(object):
 	def turn_2_left(curr_ship):
 		"""
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		radius = 63
 		arc_ang = math.pi / 2
@@ -158,7 +182,8 @@ class Movment(object):
 	def turn_2_right(curr_ship):
 		"""
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		radius = 63
 		arc_ang = math.pi / 2
@@ -168,7 +193,8 @@ class Movment(object):
 	def turn_3_left(curr_ship):
 		"""
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		radius = 90
 		arc_ang = math.pi / 2
@@ -178,7 +204,8 @@ class Movment(object):
 	def turn_3_right(curr_ship):
 		"""
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		radius = 90
 		arc_ang = math.pi / 2
@@ -188,7 +215,8 @@ class Movment(object):
 	def bank_1_left(curr_ship):
 		"""
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		radius = 80
 		arc_ang = math.pi / 4
@@ -198,7 +226,8 @@ class Movment(object):
 	def bank_1_right(curr_ship):
 		"""
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		radius = 80
 		arc_ang = math.pi / 4
@@ -208,7 +237,8 @@ class Movment(object):
 	def bank_2_left(curr_ship):
 		"""
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		radius = 130
 		arc_ang = math.pi / 4
@@ -218,7 +248,8 @@ class Movment(object):
 	def bank_2_right(curr_ship):
 		"""
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		radius = 130
 		arc_ang = math.pi / 4
@@ -228,7 +259,8 @@ class Movment(object):
 	def bank_3_left(curr_ship):
 		"""
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		radius = 180
 		arc_ang = math.pi / 4
@@ -238,7 +270,8 @@ class Movment(object):
 	def bank_3_right(curr_ship):
 		"""
 		:param Ship curr_ship: a ship instance
-		:return: None
+		:return: curr_ship
+		:rtype: Ship
 		"""
 		radius = 180
 		arc_ang = math.pi / 4
@@ -253,6 +286,7 @@ class Ship(Point):
 	def base_size(self):
 		"""
 		Returns the size of the base in mm (width, Height
+
 		:return: A tuple containing the Width and Height
 		:rtype: tuple(int, int)
 		"""
@@ -262,6 +296,7 @@ class Ship(Point):
 	def name(self):
 		"""
 		The ships full name (e.g. Tie Fighter)
+
 		:return: Ships name
 		:rtype: str
 		"""
@@ -272,7 +307,8 @@ class Small_Ship(Ship):
 	@property
 	def base_size(self):
 		"""
-		Returns the size of the base in mm (width, Height
+		Returns the size of the base in mm (Width, Height)
+
 		:return: A tuple containing the Width and Height
 		:rtype: tuple(int, int)
 		"""
